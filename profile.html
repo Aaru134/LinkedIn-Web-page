@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Website </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ======== Navbar Start ======== -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="logo.png" alt=""></a>
+
+            <div class="search-box">
+                <img src="search.png" alt="">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="home.png" alt=""><span>Home</span></a></li>
+                <li><a href="#"><img src="network.png" alt=""><span>My Network</span></a></li>
+                <li><a href="#"><img src="jobs.png" alt=""><span>Jobs</span></a></li>
+                <li><a href="#"><img src="message.png" alt=""><span>Messaging</span></a></li>
+                <li><a href="#"><img src="notification.png" alt=""><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="user-1.png" class="nav-profile-img" onclick="toggleMenu()" alt="">
+            </div>
+
+        </div>
+        <!-- --------------- profile-drop-down-menu--------------- -->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="user-1.png" alt="">
+                    <div>
+                        <h3>Benjamin Leo</h3>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="feedback.png" alt="">
+                    <p>Give feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="setting.png" alt="">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="help.png" alt="">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="display.png" alt="">
+                    <p>Display & Accessiblity</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="logout.png" alt="">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
+    </nav>
+    <!-- ======= Navbar End ======= -->
+
+    <div class="container">
+        <div class="profile-main">
+            <div class="profile-container">
+                <img src="cover-pic.png" width="100%" alt="">
+                <div class="profile-container-inner">
+                    <img src="user-1.png" class="profile-pic" alt="">
+                    <h1>Benjamin Leo</h1>
+                    <b>Web Developer at Microsoft | Fromer Developer at DataStack and
+                        Intern at Oracle</b>
+                    <p>San Franciso, United States &middot; <a href="#">Contact info</a></p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ----------------- profile- sidebar ---------------- -->
+        <div class="profile-sidebar"></div>
+    </div>
+
+
+
+    <script>
+
+        let profileMenu = document.getElementById("profileMenu");
+
+        function toggleMenu() {
+            profileMenu.classList.toggle("open-menu");
+        }
+    </script>
+</body>
+
+</html>
